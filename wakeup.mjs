@@ -8,11 +8,11 @@ const PROJ = {
   screenshotFile: 'screenshot.png',
 };
 
-const ACCESS_TOKEN = process.env.ZO_ACCESS_TOKEN;
-const REFRESH_TOKEN = process.env.ZO_REFRESH_TOKEN;
+const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
+const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
 
 if (!ACCESS_TOKEN || !REFRESH_TOKEN) {
-  console.error('Missing ZO_ACCESS_TOKEN or ZO_REFRESH_TOKEN');
+  console.error('Missing ACCESS_TOKEN or REFRESH_TOKEN');
   process.exit(1);
 }
 
